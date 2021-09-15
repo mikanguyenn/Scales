@@ -1,6 +1,6 @@
 void setup() {
   size(500, 500);  //feel free to change the size
-  noLoop(); //stops the draw() function from repeating
+   //stops the draw() function from repeating
   background(204,153,255);
 }
 void draw() {
@@ -10,6 +10,7 @@ void draw() {
     }
   }
 }
+
 void scale(int x, int y) {
  fill((int)(Math.random()*205),(int)(Math.random()*154),(int)(Math.random()*256));
  beginShape();
@@ -32,10 +33,7 @@ void scale(int x, int y) {
  endShape(); 
  noFill();
   
-  ellipse(x+20,y+20,8,8);
-  ellipse(x+20,y+28,6,6);
+  quad(x+10,y+15,x+20,y+25,x+30,y+15,x+20,y+10);
   quad(x+5,y+15,x+20,y+30,x+35,y+15,x+20,y+5);
 }
-
-
 
