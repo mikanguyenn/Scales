@@ -13,7 +13,7 @@ void draw() {
 
 void scale(int x, int y) {
  fill((int)(Math.random()*205),(int)(Math.random()*154),(int)(Math.random()*256));
- beginShape();
+  beginShape();
   curveVertex(x+20,y);
   curveVertex(x+20,y);
   curveVertex(x+1,y+10);
@@ -31,9 +31,10 @@ void scale(int x, int y) {
   curveVertex(x+20,y+40);
   curveVertex(x+20,y+40);
  endShape(); 
- noFill();
-  
-  quad(x+10,y+15,x+20,y+25,x+30,y+15,x+20,y+10);
+  fill(102,102,255);
   quad(x+5,y+15,x+20,y+30,x+35,y+15,x+20,y+5);
+  fill(173,216,255);
+  quad(x+10,y+15,x+20,y+25,x+30,y+15,x+20,y+10);
+ 
+  
 }
-
