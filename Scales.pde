@@ -12,7 +12,9 @@ void draw() {
 }
 
 void scale(int x, int y) {
- fill((int)(Math.random()*205),(int)(Math.random()*154),(int)(Math.random()*256));
+ fill((int)(Math.random()*200),(int)(Math.random()*50),(int)(Math.random()*250));
+ ellipse(x,y,18,20);
+ fill(0,0,200);
   beginShape();
   curveVertex(x+20,y);
   curveVertex(x+20,y);
@@ -35,6 +37,4 @@ void scale(int x, int y) {
   quad(x+5,y+15,x+20,y+30,x+35,y+15,x+20,y+5);
   fill(173,216,255);
   quad(x+10,y+15,x+20,y+25,x+30,y+15,x+20,y+10);
- 
-  
 }
