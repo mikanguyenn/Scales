@@ -14,7 +14,7 @@ void draw() {
 void scale(int x, int y) {
 noStroke();
  fill((int)(Math.random()*200),(int)(Math.random()*50),(int)(Math.random()*250));
- ellipse(x,y,20,21);
+ ellipse(x,y+2,20,20);
  stroke(2);
  fill(0,0,200);
   beginShape();
